@@ -1,0 +1,155 @@
+
+@font-face {
+	font-family: myf;
+	src: url(../fonts/a.ttf);
+}
+@font-face {
+	font-family: myf2;
+	src: url(../fonts/b.ttf);
+}
+@font-face {
+	font-family: myf3;
+	src: url(../fonts/c.ttf);
+}
+@font-face {
+	font-family: myf4;
+	src: url(../fonts/d.otf);
+}
+body{
+	margin: 0px;
+}
+* {
+	outline: none;
+}
+
+#sidebar{
+	position: relative;
+	background-color: #fafbfc;
+	height: 100%;
+	width: 30%;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+	overflow: auto;
+}
+#nav-kecil{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	border-radius: 0px;
+	background-image: linear-gradient(to right, #2193ed , #1dc1e1); 
+	border:none;
+}
+.jgn{
+	display: none;		
+}
+@media screen and (min-width: 771px) {
+	#nav-kecil{
+		display:none
+	}
+}
+@media screen and (max-width: 770px) {
+	.jgn{
+		display: block;
+		color:red;
+	}
+	#nav-kecil{
+		display:block
+	}
+	#sidebar{
+		position: relative;
+		background-color: #fafbfc;
+		height: 100%;
+		width: 30%;
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+		overflow: auto;
+		display: none;
+	}
+	#maps{
+		width: 100% !important;
+		left: 0% !important;
+	}
+}
+#jdl{
+	background-image: linear-gradient(to right, #2193ed , #1dc1e1);
+	padding: 10px 15px;
+}
+#jdl > h2{
+	color: #fafbfc;
+	font-family: myf2;
+	font-weight: bold;
+	line-height: 1.4em;
+	margin:0px;
+	text-align: center;
+}
+#maps{
+	height: 100%;
+	width: 70%;
+	position: fixed;
+	left: 30%;
+	bottom: 0px
+}
+#search{
+	font-family: myf;
+	color: #19aac6;
+	margin-top:40px;
+	margin-bottom: 30px
+}
+.form-control{
+	border : 1px solid #1dc1e1;
+	font-family: myf
+}
+#btn-cari{
+	border-radius: 0px;
+	background-color: #1dc1e1;
+	color:#fafbfc;
+	font-family: myf2;
+	font-weight: bold;
+	padding: 10px 15px
+}
+#btn-cari:hover{
+	background-color:#2193ed
+}
+#btn-profile{
+	border-radius: 0px;
+	background-color: #1dc1e1;
+	color:#fafbfc;
+	font-family: myf2;
+	font-weight: bold;
+	padding: 10px 15px
+}
+#btn-profile:hover{
+	background-color:#2193ed
+}
+.btn-cari{
+	border-radius: 0px;
+	background-color: #1dc1e1;
+	color:#fafbfc;
+	font-family: myf2;
+	font-weight: bold;
+	padding: 10px 15px
+}
+.btn-cari:hover{
+	background-color:#2193ed
+}
+#tanya{
+	font-family: myf;
+	color: #1dc1e1;
+}
+#nav-relawan{
+	background-image: linear-gradient(to right, #2193ed , #1dc1e1);
+	border:none;
+	border-radius: 0px
+}
+.navbar-default .navbar-nav > li > a{
+	color:#fff;
+	font-family: myf;
+	font-weight: bold
+}
+.navbar-default .navbar-brand{
+	color:#fafbfc;
+}
+.jdl-relawan{
+	font-family: myf;
+	color: #19aac6;
+	margin-top:40px;
+	margin-bottom: 30px
+}
